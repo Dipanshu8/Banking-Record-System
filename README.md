@@ -11,12 +11,26 @@ A sample program of banks record system using C++
 ## Advanced Feature
 * Live Transaction
 
-## Files
-1.) Accounts Header File to initialize all variables
-2.) Accouts Cpp file to implement basic functions
-3.) Transaction Header File to initialize transactional variables
-4.) Transaction Cpp file to implement transaction
-5.) Simmple cpp file as main file to implement whole program
+## Work-Flow
+Data members:
+1) Name of the depositor
+2) Account number
+3) Type of account
+4) Balance amount in the account.
+
+Member functions:
+1) To assign initial values
+2) To deposit an amount
+3) To withdraw an amount after checking the balance
+4) To display name and balance.
+
+Main Program
+
 
 ## Intructions
-Run all the files on any C++ compiler starting from the 1st to last respectively and do the required operation on output terminal
+* Create text file by the name record.txt to store data
+* Create an empty text file by the name Tempfile.txt to store the data in between transaction
+* Save the text files in same location as main.cpp file
+* Run main.cpp using C++11
+
+#### Thankyou
