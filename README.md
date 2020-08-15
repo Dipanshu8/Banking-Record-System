@@ -28,9 +28,9 @@ Main Program
 
 
 ## Intructions
-* Create text file by the name record.txt to store data
-* Create an empty text file by the name Tempfile.txt to store the data in between transaction
-* Save the text files in same location as main.cpp file
+* Create an empty file by the name record.bank to store data
 * Run main.cpp using C++11
+* It create an empty file by the name tempfile.bank to store the data in between transaction and after copmletion it is converted to record.bank
+* Save all files in same location as main.cpp file
 
 #### Thankyou
