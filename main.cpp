@@ -1,13 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<cstdlib>
-using std::cout;
-using std::cin;
-using std::endl;
-using std::fstream;
-using std::ofstream;
-using std::ifstream;
-using std::ios;
+using namespace std;
 class account_query
 {
 private:
@@ -24,7 +18,7 @@ public:
     void edit_rec();
     void delete_rec();
 };
-void account_query::read_data()
+void account_query:: read_data()
 {
     cout<<"\nEnter Account Number: ";
     cin>>account_number;
@@ -36,7 +30,7 @@ void account_query::read_data()
     cin>>total_Balance;
     cout<<endl;
 }
-void account_query::show_data()
+void account_query:: show_data()
 {
     cout<<"Account Number: "<<account_number<<endl;
     cout<<"First Name: "<<firstName<<endl;
@@ -44,7 +38,7 @@ void account_query::show_data()
     cout<<"Current Balance: Rs.  "<<total_Balance<<endl;
     cout<<"-------------------------------"<<endl;
 }
-void account_query::write_rec()
+void account_query:: write_rec()
 {
     ofstream outfile;
     outfile.open("record.bank", ios::binary|ios::app);
@@ -52,7 +46,7 @@ void account_query::write_rec()
     outfile.write(reinterpret_cast<char *>(this), sizeof(*this));
     outfile.close();
 }
-void account_query::read_rec()
+void account_query:: read_rec()
 {
     ifstream infile;
     infile.open("record.bank", ios::binary);
@@ -71,7 +65,7 @@ void account_query::read_rec()
     }
     infile.close();
 }
-void account_query::search_rec()
+void account_query:: search_rec()
 {
     int n;
     ifstream infile;
@@ -90,7 +84,7 @@ void account_query::search_rec()
     infile.read(reinterpret_cast<char*>(this), sizeof(*this));
     show_data();
 }
-void account_query::edit_rec()
+void account_query:: edit_rec()
 {
     int n;
     fstream iofile;
@@ -116,7 +110,7 @@ void account_query::edit_rec()
     read_data();
     iofile.write(reinterpret_cast<char*>(this), sizeof(*this));
 }
-void account_query::delete_rec()
+void account_query:: delete_rec()
 {
     int n;
     ifstream infile;
