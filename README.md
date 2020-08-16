@@ -10,6 +10,7 @@ A sample program of banks record system using C++
 
 ## Advanced Feature
 * Live Transaction
+Withdraw and Deposit
 
 ## Work-Flow
 Data members:
