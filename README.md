@@ -29,9 +29,14 @@ Main Program
 
 
 ## Intructions
-* Create an empty file by the name record.bank to store data
-* Run main.cpp using C++14
-* It create an empty file by the name tempfile.bank to store the data in between transaction and after copmletion it is converted to record.bank
+* Create an empty file by the name account.dat to store data
+* It create an empty file by the name tempfile.dat to store the data in between transaction and after copmletion it is converted to record.dat
 * Save all files in same location as main.cpp file
 
+## Steps
+* first install a compiler: code:Blocks
+* Then type the C++ program, save it.
+* Then open the command line and change directory, using cd to the particular directory where the source file is stored.
+  eg:: cd C:\file location\...
+* Then to compile/run type in the command prompt, gcc main.cpp
 #### Thankyou
