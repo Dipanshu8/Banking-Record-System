@@ -34,7 +34,7 @@ Main Program
 * Save all files in same location as main.cpp file
 
 ## Steps
-* first install a compiler: code:Blocks
+* first install a compiler: https://sourceforge.net/projects/mingw/files/OldFiles/
 * Then type the C++ program, save it.
 * Then open the command line and change directory, using cd to the particular directory where the source file is stored.
   eg:: cd C:\file location\...
